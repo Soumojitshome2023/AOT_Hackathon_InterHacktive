@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section | Soumojit Shome</title>
+
+
+    <link rel="stylesheet" href="..\styles\comment_sec.css">
+
+    <script src="https://kit.fontawesome.com/813697e957.js" crossorigin="anonymous"></script>
+
+
+    <!--=================================== FireBase ===================================-->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <!-- =========================================================================== -->
+
+
+</head>
+
+<body>
+
+    <section>
+
+        <!-- ================================Outer Box================================ -->
+        <div class="outer_box">
+
+
+            <!-- ================================Comment Input================================ -->
+            <div class="comment_input">
+
+
+                <button class="btn" id="sing_in_btn" onclick="signInWithGoogle()">
+                    <i class="fa-brands fa-google"></i>
+                    <span class="text">Sign In With Google</span>
+                </button>
+
+                <textarea id="cmnt" name="message" rows="4" cols="50" placeholder="Write your comment here"
+                    maxlength="150"></textarea>
+
+                <span id="wait_mess">
+                    <div class="loader">
+                        <div class="justify-content-center jimu-primary-loading"></div>
+                    </div>
+                </span>
+
+                <button onclick="wait()" class="btn" id="submit-btn"><i
+                        class="fa-solid fa-paper-plane"></i>Send</button>
+            </div>
+            <!-- ======================================================================= -->
+
+
+
+            <!-- ================================Heading================================ -->
+            <div class="heading">
+                <p>Comment your thoughts</p>
+            </div>
+            <!-- ======================================================================= -->
+
+
+
+            <!-- ================================comments section================================ -->
+            <div class="comments_sec">
+                <div class="all_comments">
+                    <div class="loader">
+                        <div class="justify-content-center jimu-primary-loading"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================================ -->
+
+        </div>
+        <!-- ============================================================================ -->
+
+    </section>
+
+
+
+    <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script> -->
+
+</body>
+
+<!-- ================= Script ================= -->
+<script src="..\scripts\comment_sec.js"></script>
+<script src="..\scripts\firebase.js"></script>
+<!-- =================================================== -->
+
+
+
+</html>
