@@ -1,311 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn to Code | Soumojit Shome</title>
 
     <!-- =================Links================= -->
-    <link rel="stylesheet" href="styles\style.css">
-    <link rel="shortcut icon" href="imgs\favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles\style.css" />
+    <link rel="shortcut icon" href="imgs\favicon.jpg" type="image/x-icon" />
     <!-- =================================================== -->
-
 
     <!-- =================Meta Tags================= -->
 
     <!-- <meta name="theme-color" content="#603813" /> -->
 
-    <meta name="title" content="Learning Website | Soumojit Shome">
-    <meta name="description" content="Learning Website | Soumojit Shome">
-    <meta name="keywords" content="learn to code, learning website, soumojit shome">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="5 days">
-    <meta name="author" content="Soumojit Shome">
+    <meta name="title" content="Learning Website | Soumojit Shome" />
+    <meta name="description" content="Learning Website | Soumojit Shome" />
+    <meta
+      name="keywords"
+      content="learn to code, learning website, soumojit shome" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="5 days" />
+    <meta name="author" content="Soumojit Shome" />
 
-    <meta itemprop="image" content="https://drive.google.com/uc?export=view&id=1GRsVh7GsGAMQ2VD22Q42C2yV3_Ow2HNG">
+    <meta
+      itemprop="image"
+      content="https://drive.google.com/uc?export=view&id=1GRsVh7GsGAMQ2VD22Q42C2yV3_Ow2HNG" />
 
-    <meta property="og:title" content="Learning Website | Soumojit Shome">
-    <meta property="og:site_name" content="Learning Website | Soumojit Shome">
-    <meta property="og:url" content="https://learning-website-soumojit.vercel.app">
-    <meta property="og:description" content="Learning Website | Soumojit Shome">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1GRsVh7GsGAMQ2VD22Q42C2yV3_Ow2HNG">
-
+    <meta property="og:title" content="Learning Website | Soumojit Shome" />
+    <meta property="og:site_name" content="Learning Website | Soumojit Shome" />
+    <meta
+      property="og:url"
+      content="https://learning-website-soumojit.vercel.app" />
+    <meta
+      property="og:description"
+      content="Learning Website | Soumojit Shome" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://drive.google.com/uc?export=view&id=1GRsVh7GsGAMQ2VD22Q42C2yV3_Ow2HNG" />
 
     <!-- =================================================== -->
-
-
 
     <!-- =================FONT AWESOME================= -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- =================================================== -->
-
 
     <!-- =================GOOGLE FONTS================= -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet" />
     <!-- =================================================== -->
-
 
     <!-- =================FireBase================= -->
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
     <!-- =================================================== -->
+  </head>
 
-
-</head>
-
-<body>
-
+  <body>
     <!-- =================Nav Bar================= -->
     <section id="navbar">
-        <div class="loader">
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__ball"></div>
+      <div class="loader">
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__ball"></div>
+      </div>
+      <p>Learn to Code</p>
+      <button
+        class="button"
+        id="nav_sign_in_btn"
+        onclick="signInWithGoogle_btn()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+          <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+        </svg>
+        Sign In
+      </button>
+      <div class="user_box">
+        <div class="user_card">
+          <div class="user_card-border-top"></div>
+          <div class="img" id="user_box_img"></div>
+          <span id="user_box_name"></span>
+          <button onclick="sign_out()">Sign Out</button>
         </div>
-        <p>Learn to Code</p>
-        <button class="button" id="nav_sign_in_btn" onclick="signInWithGoogle_btn()">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
-                <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-            </svg>
-            Sign In
-        </button>
-        <div class="user_box">
-            <div class="user_card">
-                <div class="user_card-border-top">
-                </div>
-                <div class="img" id="user_box_img">
-                </div>
-                <span id="user_box_name"></span>
-                <button onclick="sign_out()"> Sign Out
-                </button>
-            </div>
-        </div>
+      </div>
     </section>
     <!-- =================================================== -->
-
 
     <!-- =================Main================= -->
     <section id="topics">
-
-        <!-- =================CPP================= -->
-        <div class="card">
-            <div class="image"><img src="imgs\cpp logo.png" alt=""></div>
-            <div class="content">
-                <a href="#">
-                    <span class="title">
-                        Complete CPP
-                    </span>
-                </a>
-                <p class="desc">
-                    As C++ is close to other programming languages such as C# and Java, which makes it easy for
-                    programmers to switch to C++ or vice versa while it is actually very easy to learn.
-                </p>
-                <a href="pages\cpp.html" target="_blank">
-
-                    <button class="learn_more_btn">
-                        Learn more
-                    </button>
-                </a>
-            </div>
+      <!-- =================CPP================= -->
+      <div class="card">
+        <div class="image"><img src="imgs\cpp logo.png" alt="" /></div>
+        <div class="content">
+          <a href="#">
+            <span class="title"> Complete CPP </span>
+          </a>
+          <p class="desc">
+            As C++ is close to other programming languages such as C# and Java,
+            which makes it easy for programmers to switch to C++ or vice versa
+            while it is actually very easy to learn.
+          </p>
+          <a href="pages\cpp.html" target="_blank">
+            <button class="learn_more_btn">Learn more</button>
+          </a>
         </div>
-        <!-- =================================================== -->
+      </div>
+      <!-- =================================================== -->
 
-
-        <!-- =================C================= -->
-        <div class="card">
-            <div class="image"><img src="imgs\c logo.png" alt=""></div>
-            <div class="content">
-                <a href="#">
-                    <span class="title">
-                        Complete C
-                    </span>
-                </a>
-                <p class="desc">
-                    C is a general-purpose programming language, developed in 1972, and still quite popular.
-
-                    C is very powerful; it has been used to develop operating systems, databases, applications, etc.
-                </p>
-                <a href="#">
-                    <button class="learn_more_btn">
-                        Coming Soon
-                    </button>
-                </a>
-            </div>
+      <!-- =================C================= -->
+      <div class="card">
+        <div class="image"><img src="imgs\c logo.png" alt="" /></div>
+        <div class="content">
+          <a href="#">
+            <span class="title"> Complete C </span>
+          </a>
+          <p class="desc">
+            C is a general-purpose programming language, developed in 1972, and
+            still quite popular. C is very powerful; it has been used to develop
+            operating systems, databases, applications, etc.
+          </p>
+          <a href="#">
+            <button class="learn_more_btn">Coming Soon</button>
+          </a>
         </div>
-        <!-- =================================================== -->
+      </div>
+      <!-- =================================================== -->
 
-
-        <!-- =================Python================= -->
-        <div class="card">
-            <div class="image"><img src="imgs\python logo.png" alt=""></div>
-            <div class="content">
-                <a href="#">
-                    <span class="title">
-                        Complete Python
-                    </span>
-                </a>
-                <p class="desc">
-                    Python is a popular programming language.
-
-                    Python can be used on a server to create web applications.
-                </p>
-                <a href="#">
-                    <button class="learn_more_btn">
-                        Coming Soon
-                    </button>
-                </a>
-            </div>
+      <!-- =================Python================= -->
+      <div class="card">
+        <div class="image"><img src="imgs\python logo.png" alt="" /></div>
+        <div class="content">
+          <a href="#">
+            <span class="title"> Complete Python </span>
+          </a>
+          <p class="desc">
+            Python is an interpreted, object-oriented, high-level programming
+            language with dynamic semantics.Its high-level built-in data
+            structures, combined with dynamic typing and dynamic binding, make
+            it very attractive for Rapid Application Development
+          </p>
+          <a href="#">
+            <button class="learn_more_btn">Coming Soon</button>
+          </a>
         </div>
-        <!-- =================================================== -->
+      </div>
+      <!-- =================================================== -->
 
-
-
-        <!-- =================JAVA================= -->
-        <div class="card">
-            <div class="image"><img src="imgs\java logo.png" alt=""></div>
-            <div class="content">
-                <a href="#">
-                    <span class="title">
-                        Complete JAVA
-                    </span>
-                </a>
-                <p class="desc">
-                    Java is a popular programming language.
-
-                    Java is used to develop mobile apps, web apps, desktop apps, games and much more.
-                </p>
-                <a href="#">
-                    <button class="learn_more_btn">
-                        Coming Soon
-                    </button>
-                </a>
-            </div>
+      <!-- =================JAVA================= -->
+      <div class="card">
+        <div class="image"><img src="imgs\java logo.png" alt="" /></div>
+        <div class="content">
+          <a href="#">
+            <span class="title"> Complete JAVA </span>
+          </a>
+          <p class="desc">
+            Java is a popular programming language. Java is used to develop
+            mobile apps, web apps, desktop apps, games and much more.
+          </p>
+          <a href="#">
+            <button class="learn_more_btn">Coming Soon</button>
+          </a>
         </div>
-        <!-- =================================================== -->
+      </div>
+      <!-- =================================================== -->
 
-
-
-        <!-- =================HTML================= -->
-        <div class="card">
-            <div class="image"><img src="imgs\html logo.png" alt=""></div>
-            <div class="content">
-                <a href="#">
-                    <span class="title">
-                        Complete HTML
-                    </span>
-                </a>
-                <p class="desc">
-                    HTML is the standard markup language for Web pages.
-
-                    With HTML you can create your own Website.
-
-                    HTML is easy to learn - You will enjoy it!
-                </p>
-                <a href="#">
-                    <button class="learn_more_btn">
-                        Coming Soon
-                    </button>
-                </a>
-            </div>
+      <!-- =================HTML================= -->
+      <div class="card">
+        <div class="image"><img src="imgs\html logo.png" alt="" /></div>
+        <div class="content">
+          <a href="#">
+            <span class="title"> Complete HTML </span>
+          </a>
+          <p class="desc">
+            HTML is the standard markup language for Web pages. With HTML you
+            can create your own Website. HTML is easy to learn - You will enjoy
+            it!
+          </p>
+          <a href="#">
+            <button class="learn_more_btn">Coming Soon</button>
+          </a>
         </div>
-        <!-- =================================================== -->
+      </div>
+      <!-- =================================================== -->
 
-
-
-        <!-- =================CSS================= -->
-        <div class="card">
-            <div class="image"><img src="imgs\css logo.png" alt=""></div>
-            <div class="content">
-                <a href="#">
-                    <span class="title">
-                        Complete CSS
-                    </span>
-                </a>
-                <p class="desc">
-                    CSS is the language we use to style an HTML document.
-
-                    CSS describes how HTML elements should be displayed.
-
-                    This tutorial will teach you CSS from basic to advanced.
-                </p>
-                <a href="#">
-                    <button class="learn_more_btn">
-                        Coming Soon
-                    </button>
-                </a>
-            </div>
+      <!-- =================CSS================= -->
+      <div class="card">
+        <div class="image"><img src="imgs\css logo.png" alt="" /></div>
+        <div class="content">
+          <a href="#">
+            <span class="title"> Complete CSS </span>
+          </a>
+          <p class="desc">
+            CSS is the language we use to style an HTML document. CSS describes
+            how HTML elements should be displayed. This tutorial will teach you
+            CSS from basic to advanced.
+          </p>
+          <a href="#">
+            <button class="learn_more_btn">Coming Soon</button>
+          </a>
         </div>
-        <!-- =================================================== -->
+      </div>
+      <!-- =================================================== -->
 
-
-        <!-- =================JavaScript================= -->
-        <div class="card">
-            <div class="image"><img src="imgs\js logo.png" alt=""></div>
-            <div class="content">
-                <a href="#">
-                    <span class="title">
-                        Complete JavaScript
-                    </span>
-                </a>
-                <p class="desc">
-                    JavaScript is the world's most popular programming language.
-
-                    JavaScript is the programming language of the Web.
-
-                    JavaScript is easy to learn.
-
-                    This tutorial will teach you JavaScript from basic to advanced.
-                </p>
-                <a href="#">
-                    <button class="learn_more_btn">
-                        Coming Soon
-                    </button>
-                </a>
-            </div>
+      <!-- =================JavaScript================= -->
+      <div class="card">
+        <div class="image"><img src="imgs\js logo.png" alt="" /></div>
+        <div class="content">
+          <a href="#">
+            <span class="title"> Complete JavaScript </span>
+          </a>
+          <p class="desc">
+            JavaScript is the world's most popular programming language.
+            JavaScript is the programming language of the Web. JavaScript is
+            easy to learn. This tutorial will teach you JavaScript from basic to
+            advanced.
+          </p>
+          <a href="#">
+            <button class="learn_more_btn">Coming Soon</button>
+          </a>
         </div>
-        <!-- =================================================== -->
-
-
-
-
-
+      </div>
+      <!-- =================================================== -->
     </section>
     <!-- =================================================== -->
 
-
-
     <!-- =================comment Sec================= -->
-    <embed src="pages\comment_sec.html" type="">
+    <embed src="pages\comment_sec.html" type="" />
     <!-- =================================================== -->
-
-
 
     <!-- ================= Footer ================= -->
     <section id="footer">
-        <a href="https://iamsoumojit.vercel.app" target="_blank">
-            Copyright © 2023 All rights reserved || Designed By: Soumojit Shome
-        </a>
+      <a href="https://iamsoumojit.vercel.app" target="_blank">
+        Copyright © 2023 All rights reserved || Designed By: Soumojit Shome
+      </a>
     </section>
     <!-- =================================================== -->
+  </body>
 
-
-
-</body>
-
-
-<!-- ================= Script ================= -->
-<script src="scripts\script.js"></script>
-<script src="scripts\firebase.js"></script>
-<!-- =================================================== -->
-
-
+  <!-- ================= Script ================= -->
+  <script src="scripts\script.js"></script>
+  <script src="scripts\firebase.js"></script>
+  <!-- =================================================== -->
 </html>
