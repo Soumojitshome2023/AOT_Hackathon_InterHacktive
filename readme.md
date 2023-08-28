@@ -30,27 +30,27 @@ In essence, this elegantly designed website not only offers an alternative to tr
 
 1. **Home Page:**
 
-![1693221005084](image/readme/1693221005084.png)
+![1693221005084](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221005084.png)
 
 2. **Learning Topics :**
 
-![1693221047491](image/readme/1693221047491.png)
+![1693221047491](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221047491.png)
 
-![1693221203156](image/readme/1693221203156.png)
+![1693221203156](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221203156.png)
 
 3. **Comment Section :**
 
-![1693221214439](image/readme/1693221214439.png)
+![1693221214439](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221214439.png)
 
 4. **Sign In and Sign Out**
 
-![1693221274203](image/readme/1693221274203.png)
+![1693221274203](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221274203.png)
 
-![1693221292393](image/readme/1693221292393.png)
+![1693221292393](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221292393.png)
 
-![1693221299648](image/readme/1693221299648.png)
+![1693221299648](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221299648.png)
 
-![1693221306173](image/readme/1693221306173.png)
+![1693221306173](https://github.com/Soumojitshome2023/AOT_Hackathon_InterHacktive/blob/main/image/readme/1693221306173.png)
 
 ## Frequently Asked Questions (FAQ) :
 
