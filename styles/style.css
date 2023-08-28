@@ -66,12 +66,14 @@ body {
 }
 
 .card {
+  /* border: 3px solid rgb(255, 0, 0); */
   max-width: 400px;
   border-radius: 0.5rem;
   background-color: #d4d4d4ec;
   box-shadow: 0 0px 8px 2px rgb(5, 5, 5);
   border: 1px solid transparent;
   margin: 20px;
+  height: fit-content;
 }
 
 .card a {
