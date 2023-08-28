@@ -26,6 +26,10 @@ In essence, this elegantly designed website not only offers an alternative to tr
 
 [https://youtu.be/LAy6W8VNz_M](https://youtu.be/LAy6W8VNz_M)
 
+[![Watch the YouTube Video](https://img.youtube.com/vi/LAy6W8VNz_M/0.jpg)](https://www.youtube.com/watch?v=LAy6W8VNz_M)
+
+
+
 ## Screenshots :
 
 1. **Home Page:**
