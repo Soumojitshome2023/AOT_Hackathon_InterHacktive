@@ -239,7 +239,7 @@ function sign_in_and_cmnt_box() {
     if (localStorage.getItem("user_name") != null && localStorage.getItem("user_photoURL") != null) {
         document.getElementById("cmnt").style.display = "block";
         document.getElementById("sing_in_btn").style.display = "none";
-        
+
     }
     else {
         document.getElementById("cmnt").style.display = "none";

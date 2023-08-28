@@ -332,6 +332,7 @@ section {
 }
 
 @-webkit-keyframes loading-keys-app-loading {
+
   0%,
   80%,
   100% {
@@ -348,6 +349,7 @@ section {
 }
 
 @keyframes loading-keys-app-loading {
+
   0%,
   80%,
   100% {

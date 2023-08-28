@@ -2,213 +2,213 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPP</title>
 
-    <!-- =================Links================= -->
-    <link rel="stylesheet" href="..\styles\cpp.css">
-    <link rel="shortcut icon" href="..\imgs\cpp logo.png" type="image/x-icon">
-    <!-- ============================================== -->
+  <!-- =================Links================= -->
+  <link rel="stylesheet" href="..\styles\cpp.css">
+  <link rel="shortcut icon" href="..\imgs\cpp logo.png" type="image/x-icon">
+  <!-- ============================================== -->
 
-    <meta name="theme-color" content="#ebb794" />
-
-
-    <!-- Include Highlight.js library CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"> -->
-
-    <!-- Include the C++ language support for Highlight.js -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/cpp.min.js"></script> -->
-
-    <!-- Include Highlight.js library -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script> -->
+  <meta name="theme-color" content="#ebb794" />
 
 
-    <!-- ================= CDN ================= -->
-    <link rel="stylesheet" href="..\styles\cdn_styles_default.css">
-    <script src="..\scripts\cdn_highligt.js"></script>
-    <script src="..\scripts\cdn_languages_cpp.js"></script>
-    <!-- =================================================== -->
+  <!-- Include Highlight.js library CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"> -->
+
+  <!-- Include the C++ language support for Highlight.js -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/cpp.min.js"></script> -->
+
+  <!-- Include Highlight.js library -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script> -->
 
 
-    <!-- =================Initialize Highlight.js================= -->
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelectorAll('pre code').forEach((block) => {
-                hljs.highlightElement(block);
-            });
-        });
-    </script>
-    <!-- ============================================================ -->
+  <!-- ================= CDN ================= -->
+  <link rel="stylesheet" href="..\styles\cdn_styles_default.css">
+  <script src="..\scripts\cdn_highligt.js"></script>
+  <script src="..\scripts\cdn_languages_cpp.js"></script>
+  <!-- =================================================== -->
+
+
+  <!-- =================Initialize Highlight.js================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block);
+      });
+    });
+  </script>
+  <!-- ============================================================ -->
 
 </head>
 
 <body>
 
+  <!-- ============================Nav============================ -->
+  <section id="side_nav" onclick="topic_toggle()">
+
+    <button onclick="page_open(0)" class="topic">
+      C++ Getting Started
+    </button>
+    <button onclick="page_open(1)" class="topic">
+      C++ Output (Print Text)
+    </button>
+    <button onclick="page_open(2)" class="topic">
+      C++ Comments
+    </button>
+    <button onclick="page_open(3)" class="topic">
+      C++ Variables
+    </button>
+    <button onclick="page_open(4)" class="topic">
+      C++ User Input
+    </button>
+    <button onclick="page_open(5)" class="topic">
+      C++ Data Types
+    </button>
+    <button onclick="page_open(6)" class="topic">
+      C++ Operators
+    </button>
+    <button onclick="page_open(7)" class="topic">
+      C++ Strings
+    </button>
+    <button onclick="page_open(8)" class="topic">
+      C++ Math
+    </button>
+    <button onclick="page_open(9)" class="topic">
+      C++ Booleans
+    </button>
+    <button onclick="page_open(10)" class="topic">
+      C++ If ... Else
+    </button>
+    <button onclick="page_open(11)" class="topic">
+      C++ Switch Statements
+    </button>
+    <button onclick="page_open(12)" class="topic">
+      C++ While Loop
+    </button>
+    <button onclick="page_open(13)" class="topic">
+      C++ Do/While Loop
+    </button>
+    <button onclick="page_open(14)" class="topic">
+      C++ For Loop
+    </button>
+    <button onclick="page_open(15)" class="topic">
+      C++ Break and Continue
+    </button>
+    <button onclick="page_open(16)" class="topic">
+      C++ Arrays
+    </button>
+    <button onclick="page_open(17)" class="topic">
+      C++ Arrays and Loops
+    </button>
+    <button onclick="page_open(18)" class="topic">
+      C++ Omit Array Size
+    </button>
+    <button onclick="page_open(19)" class="topic">
+      Get the Size of an Array
+    </button>
+    <button onclick="page_open(20)" class="topic">
+      C++ Multi-Dimensional Arrays
+    </button>
+    <button onclick="page_open(21)" class="topic">
+      C++ Structures (struct)
+    </button>
+    <button onclick="page_open(22)" class="topic">
+      C++ References
+    </button>
+    <button onclick="page_open(23)" class="topic">
+      C++ Memory Address
+    </button>
+    <button onclick="page_open(24)" class="topic">
+      C++ Pointers
+    </button>
+    <button onclick="page_open(25)" class="topic">
+      C++ Functions
+    </button>
+    <button onclick="page_open(26)" class="topic">
+      C++ Function Parameters
+    </button>
+    <button onclick="page_open(27)" class="topic">
+      C++ Function Overloading
+    </button>
+    <button onclick="page_open(28)" class="topic">
+      C++ Recursion
+    </button>
+    <button onclick="page_open(29)" class="topic">
+      C++ OOP
+    </button>
+    <button onclick="page_open(30)" class="topic">
+      C++ Class Methods
+    </button>
+    <button onclick="page_open(31)" class="topic">
+      C++ Constructors
+    </button>
+    <button onclick="page_open(32)" class="topic">
+      C++ Access Specifiers
+    </button>
+    <button onclick="page_open(33)" class="topic">
+      C++ Encapsulation
+    </button>
+    <button onclick="page_open(34)" class="topic">
+      C++ Inheritance
+    </button>
+    <button onclick="page_open(35)" class="topic">
+      C++ Files
+    </button>
+    <button onclick="page_open(36)" class="topic">
+      C++ Exceptions
+    </button>
+
+
+  </section>
+  <!-- ============================================================ -->
+
+
+
+
+  <!-- ============================Content============================ -->
+  <section id="content">
+
     <!-- ============================Nav============================ -->
-    <section id="side_nav" onclick="topic_toggle()">
+    <section id="nav">
+      <button class="nav_button" onclick="previous_btn()">
+        <span class="button-content"> &lt; Previous </span>
+      </button>
 
-        <button onclick="page_open(0)" class="topic">
-            C++ Getting Started
-        </button>
-        <button onclick="page_open(1)" class="topic">
-            C++ Output (Print Text)
-        </button>
-        <button onclick="page_open(2)" class="topic">
-            C++ Comments
-        </button>
-        <button onclick="page_open(3)" class="topic">
-            C++ Variables
-        </button>
-        <button onclick="page_open(4)" class="topic">
-            C++ User Input
-        </button>
-        <button onclick="page_open(5)" class="topic">
-            C++ Data Types
-        </button>
-        <button onclick="page_open(6)" class="topic">
-            C++ Operators
-        </button>
-        <button onclick="page_open(7)" class="topic">
-            C++ Strings
-        </button>
-        <button onclick="page_open(8)" class="topic">
-            C++ Math
-        </button>
-        <button onclick="page_open(9)" class="topic">
-            C++ Booleans
-        </button>
-        <button onclick="page_open(10)" class="topic">
-            C++ If ... Else
-        </button>
-        <button onclick="page_open(11)" class="topic">
-            C++ Switch Statements
-        </button>
-        <button onclick="page_open(12)" class="topic">
-            C++ While Loop
-        </button>
-        <button onclick="page_open(13)" class="topic">
-            C++ Do/While Loop
-        </button>
-        <button onclick="page_open(14)" class="topic">
-            C++ For Loop
-        </button>
-        <button onclick="page_open(15)" class="topic">
-            C++ Break and Continue
-        </button>
-        <button onclick="page_open(16)" class="topic">
-            C++ Arrays
-        </button>
-        <button onclick="page_open(17)" class="topic">
-            C++ Arrays and Loops
-        </button>
-        <button onclick="page_open(18)" class="topic">
-            C++ Omit Array Size
-        </button>
-        <button onclick="page_open(19)" class="topic">
-            Get the Size of an Array
-        </button>
-        <button onclick="page_open(20)" class="topic">
-            C++ Multi-Dimensional Arrays
-        </button>
-        <button onclick="page_open(21)" class="topic">
-            C++ Structures (struct)
-        </button>
-        <button onclick="page_open(22)" class="topic">
-            C++ References
-        </button>
-        <button onclick="page_open(23)" class="topic">
-            C++ Memory Address
-        </button>
-        <button onclick="page_open(24)" class="topic">
-            C++ Pointers
-        </button>
-        <button onclick="page_open(25)" class="topic">
-            C++ Functions
-        </button>
-        <button onclick="page_open(26)" class="topic">
-            C++ Function Parameters
-        </button>
-        <button onclick="page_open(27)" class="topic">
-            C++ Function Overloading
-        </button>
-        <button onclick="page_open(28)" class="topic">
-            C++ Recursion
-        </button>
-        <button onclick="page_open(29)" class="topic">
-            C++ OOP
-        </button>
-        <button onclick="page_open(30)" class="topic">
-            C++ Class Methods
-        </button>
-        <button onclick="page_open(31)" class="topic">
-            C++ Constructors
-        </button>
-        <button onclick="page_open(32)" class="topic">
-            C++ Access Specifiers
-        </button>
-        <button onclick="page_open(33)" class="topic">
-            C++ Encapsulation
-        </button>
-        <button onclick="page_open(34)" class="topic">
-            C++ Inheritance
-        </button>
-        <button onclick="page_open(35)" class="topic">
-            C++ Files
-        </button>
-        <button onclick="page_open(36)" class="topic">
-            C++ Exceptions
-        </button>
+      <input id="checkbox2" type="checkbox" onclick="topic_toggle()">
+      <label class="toggle toggle2" for="checkbox2">
+        <div id="bar4" class="bars"></div>
+        <div id="bar5" class="bars"></div>
+        <div id="bar6" class="bars"></div>
+      </label>
 
 
+      <button class="nav_button" onclick="next_btn()">
+        <span class="button-content">Next &gt; </span>
+      </button>
     </section>
-    <!-- ============================================================ -->
 
-
-
-
-    <!-- ============================Content============================ -->
-    <section id="content">
-
-        <!-- ============================Nav============================ -->
-        <section id="nav">
-            <button class="nav_button" onclick="previous_btn()">
-                <span class="button-content"> &lt; Previous </span>
-            </button>
-
-            <input id="checkbox2" type="checkbox" onclick="topic_toggle()">
-            <label class="toggle toggle2" for="checkbox2">
-                <div id="bar4" class="bars"></div>
-                <div id="bar5" class="bars"></div>
-                <div id="bar6" class="bars"></div>
-            </label>
-
-
-            <button class="nav_button" onclick="next_btn()">
-                <span class="button-content">Next &gt; </span>
-            </button>
-        </section>
-
-        <div id="page_no"></div>
-        <!-- ==================================================================== -->
+    <div id="page_no"></div>
+    <!-- ==================================================================== -->
 
 
 
 
 
 
-        <!-- ============================Topic 0============================ -->
-        <div class="detail" id="0">
-            <p class="heading">C++ Getting Started</p>
-            <p class="desc">To start using C++, you need two things:
+    <!-- ============================Topic 0============================ -->
+    <div class="detail" id="0">
+      <p class="heading">C++ Getting Started</p>
+      <p class="desc">To start using C++, you need two things:
 
-                A text editor, like Notepad, to write C++ code
-                A compiler, like GCC, to translate the C++ code into a language that the computer will understand
-                There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see
-                below).</p>
+        A text editor, like Notepad, to write C++ code
+        A compiler, like GCC, to translate the C++ code into a language that the computer will understand
+        There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see
+        below).</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -221,16 +221,16 @@ return 0;
                             
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!-- ============================Topic 1============================ -->
-        <div class="detail" id="1">
-            <p class="heading">C++ Output (Print Text)</p>
-            <p class="desc">The cout object, together with the << operator, is used to output values/print text:</p>
+    <!-- ============================Topic 1============================ -->
+    <div class="detail" id="1">
+      <p class="heading">C++ Output (Print Text)</p>
+      <p class="desc">The cout object, together with the << operator, is used to output values/print text:</p>
 
-                    <div class="code">
-                        <pre>
+          <div class="code">
+            <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -244,13 +244,13 @@ int main() {
                             
                     </code>
                 </pre>
-                    </div>
+          </div>
 
-                    <p class="heading">C++ New Lines</p>
-                    <p class="desc">To insert a new line, you can use the \n character:</p>
+          <p class="heading">C++ New Lines</p>
+          <p class="desc">To insert a new line, you can use the \n character:</p>
 
-                    <div class="code">
-                        <pre>
+          <div class="code">
+            <pre>
                     <code class="cpp">
                     
 
@@ -267,19 +267,19 @@ int main() {
                             
                     </code>
                 </pre>
-                    </div>
-        </div>
+          </div>
+    </div>
 
 
-        <!-- ============================Topic 2============================ -->
-        <div class="detail" id="2">
-            <p class="heading">C++ Single-line Comments</p>
+    <!-- ============================Topic 2============================ -->
+    <div class="detail" id="2">
+      <p class="heading">C++ Single-line Comments</p>
 
-            <p class="desc">Comments can be used to explain C++ code, and to make it more readable. It can also be used
-                to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.</p>
+      <p class="desc">Comments can be used to explain C++ code, and to make it more readable. It can also be used
+        to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
     // This is a comment
@@ -287,15 +287,15 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Multi-line Comments</p>
+      </div>
+      <p class="heading">C++ Multi-line Comments</p>
 
-            <p class="desc">Multi-line comments start with /* and ends with */.
+      <p class="desc">Multi-line comments start with /* and ends with */.
 
-                Any text between /* and */ will be ignored by the compiler:</p>
+        Any text between /* and */ will be ignored by the compiler:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -311,31 +311,31 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!-- ============================Topic 3============================ -->
-        <div class="detail" id="3">
-            <p class="heading">C++ Variables</p>
+    <!-- ============================Topic 3============================ -->
+    <div class="detail" id="3">
+      <p class="heading">C++ Variables</p>
 
-            <p class="desc">Variables are containers for storing data values.
+      <p class="desc">Variables are containers for storing data values.
 
-                In C++, there are different types of variables (defined with different keywords), for example:
-                <br>
+        In C++, there are different types of variables (defined with different keywords), for example:
+        <br>
 
-                int - stores integers (whole numbers), without decimals, such as 123 or -123
-                <br>
-                double - stores floating point numbers, with decimals, such as 19.99 or -19.99
-                <br>
-                char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
-                <br>
-                string - stores text, such as "Hello World". String values are surrounded by double quotes
-                <br>
-                bool - stores values with two states: true or false
-            </p>
+        int - stores integers (whole numbers), without decimals, such as 123 or -123
+        <br>
+        double - stores floating point numbers, with decimals, such as 19.99 or -19.99
+        <br>
+        char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+        <br>
+        string - stores text, such as "Hello World". String values are surrounded by double quotes
+        <br>
+        bool - stores values with two states: true or false
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
     #include &lt;iostream&gt;
@@ -350,13 +350,13 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <p class="heading">Display Variables</p>
-            <p class="desc">The cout object is used together with the << operator to display variables. To combine both
-                    text and a variable, separate them with the << operator:</p>
-                    <div class="code">
-                        <pre>
+      <p class="heading">Display Variables</p>
+      <p class="desc">The cout object is used together with the << operator to display variables. To combine both text
+          and a variable, separate them with the << operator:</p>
+          <div class="code">
+            <pre>
                     <code class="cpp">
                     
     #include &lt;iostream&gt;
@@ -372,24 +372,24 @@ int main() {
                             
                     </code>
                 </pre>
-                    </div>
-        </div>
+          </div>
+    </div>
 
-        <!-- ============================Topic 4============================ -->
-        <div class="detail" id="4">
-            <p class="heading">C++ User Input</p>
+    <!-- ============================Topic 4============================ -->
+    <div class="detail" id="4">
+      <p class="heading">C++ User Input</p>
 
-            <p class="desc">You have already learned that cout is used to output (print) values. Now we will use cin to
-                get user input.
+      <p class="desc">You have already learned that cout is used to output (print) values. Now we will use cin to
+        get user input.
 
-                cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
+        cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
 
-                In the following example, the user can input a number, which is stored in the variable x. Then we print
-                the value of x:
-            </p>
+        In the following example, the user can input a number, which is stored in the variable x. Then we print
+        the value of x:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -407,21 +407,21 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
-        </div>
+    </div>
 
 
-        <!-- ============================Topic 5============================ -->
-        <div class="detail" id="5">
-            <p class="heading">C++ Basic Data Types</p>
+    <!-- ============================Topic 5============================ -->
+    <div class="detail" id="5">
+      <p class="heading">C++ Basic Data Types</p>
 
-            <p class="desc">As explained in the Variables chapter, a variable in C++ must be a specified data type:
-            </p>
+      <p class="desc">As explained in the Variables chapter, a variable in C++ must be a specified data type:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 int myNum = 5;               // Integer (whole number)
@@ -435,21 +435,21 @@ string myText = "Hello";     // String
                             
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
-        </div>
+    </div>
 
 
-        <!-- ============================Topic 6============================ -->
-        <div class="detail" id="6">
-            <p class="heading">C++ Arithmetic Operators</p>
+    <!-- ============================Topic 6============================ -->
+    <div class="detail" id="6">
+      <p class="heading">C++ Arithmetic Operators</p>
 
-            <p class="desc">Operators are used to perform operations on variables and values.
-            </p>
+      <p class="desc">Operators are used to perform operations on variables and values.
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -464,9 +464,9 @@ int main() {
        
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -490,19 +490,19 @@ int main() {
 
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
 
-            <p class="heading">C++ Assignment Operators</p>
+      <p class="heading">C++ Assignment Operators</p>
 
-            <p class="desc">Assignment operators are used to assign values to variables.
+      <p class="desc">Assignment operators are used to assign values to variables.
 
-                In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:
-            </p>
+        In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -549,20 +549,20 @@ int main() {
        
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
 
-            <p class="heading">C++ Logical Operators</p>
+      <p class="heading">C++ Logical Operators</p>
 
-            <p class="desc">As with comparison operators, you can also test for true (1) or false (0) values with
-                logical operators.
+      <p class="desc">As with comparison operators, you can also test for true (1) or false (0) values with
+        logical operators.
 
-                Logical operators are used to determine the logic between variables or values:
-            </p>
+        Logical operators are used to determine the logic between variables or values:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -584,19 +584,19 @@ int main() {
        
                     </code>
                 </pre>
-            </div>
+      </div>
 
-        </div>
+    </div>
 
-        <!-- ============================Topic 7============================ -->
-        <div class="detail" id="7">
-            <p class="heading">C++ Strings</p>
-            <p class="desc">Strings are used for storing text.
+    <!-- ============================Topic 7============================ -->
+    <div class="detail" id="7">
+      <p class="heading">C++ Strings</p>
+      <p class="desc">Strings are used for storing text.
 
-                A string variable contains a collection of characters surrounded by double quotes:</p>
+        A string variable contains a collection of characters surrounded by double quotes:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -612,12 +612,12 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ String Concatenation</p>
-            <p class="desc">The + operator can be used between strings to add them together to make a new string. This
-                is called concatenation:</p>
-            <div class="code">
-                <pre>
+      </div>
+      <p class="heading">C++ String Concatenation</p>
+      <p class="desc">The + operator can be used between strings to add them together to make a new string. This
+        is called concatenation:</p>
+      <div class="code">
+        <pre>
                     <code class="cpp">  
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -632,11 +632,11 @@ int main () {
 }                           
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ String Length</p>
-            <p class="desc">To get the length of a string, use the length() function:</p>
-            <div class="code">
-                <pre>
+      </div>
+      <p class="heading">C++ String Length</p>
+      <p class="desc">To get the length of a string, use the length() function:</p>
+      <div class="code">
+        <pre>
                     <code class="cpp">  
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -649,14 +649,14 @@ int main() {
 }                           
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Access Strings</p>
-            <p class="desc">You can access the characters in a string by referring to its index number inside square
-                brackets [].
+      </div>
+      <p class="heading">C++ Access Strings</p>
+      <p class="desc">You can access the characters in a string by referring to its index number inside square
+        brackets [].
 
-                This example prints the first character in myString:</p>
-            <div class="code">
-                <pre>
+        This example prints the first character in myString:</p>
+      <div class="code">
+        <pre>
                     <code class="cpp">  
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -670,12 +670,12 @@ int main() {
                            
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ User Input Strings</p>
-            <p class="desc">It is possible to use the extraction operator >> on cin to store a string entered by a user:
-            </p>
-            <div class="code">
-                <pre>
+      </div>
+      <p class="heading">C++ User Input Strings</p>
+      <p class="desc">It is possible to use the extraction operator >> on cin to store a string entered by a user:
+      </p>
+      <div class="code">
+        <pre>
                     <code class="cpp">  
 string firstName;
 cout << "Type your first name: ";
@@ -687,9 +687,9 @@ cout << "Your name is: " << firstName;
                            
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">  
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -709,23 +709,23 @@ int main() {
                            
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
 
 
 
-        </div>
+    </div>
 
 
-        <!-- ============================Topic 8============================ -->
-        <div class="detail" id="8">
-            <p class="heading">C++ Math | Max and min</p>
-            <p class="desc">C++ has many functions that allows you to perform mathematical tasks on numbers. The
-                max(x,y) function can be used to find the highest value of x and y:</p>
+    <!-- ============================Topic 8============================ -->
+    <div class="detail" id="8">
+      <p class="heading">C++ Math | Max and min</p>
+      <p class="desc">C++ has many functions that allows you to perform mathematical tasks on numbers. The
+        max(x,y) function can be used to find the highest value of x and y:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -739,9 +739,9 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -756,13 +756,13 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ &lt;cmath&gt; Header</p>
-            <p class="desc">Other functions, such as sqrt (square root), round (rounds a number) and log (natural
-                logarithm), can be found in the &lt;cmath&gt; header file:</p>
+      </div>
+      <p class="heading">C++ &lt;cmath&gt; Header</p>
+      <p class="desc">Other functions, such as sqrt (square root), round (rounds a number) and log (natural
+        logarithm), can be found in the &lt;cmath&gt; header file:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -780,29 +780,29 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
-        </div>
+    </div>
 
 
-        <!-- ============================Topic 9============================ -->
-        <div class="detail" id="9">
-            <p class="heading">C++ Booleans</p>
-            <p class="desc">Very often, in programming, you will need a data type that can only have one of two values,
-                like:
-                <br>
-                YES / NO
-                <br>
-                ON / OFF
-                <br>
-                TRUE / FALSE
-                <br>
-                For this, C++ has a bool data type, which can take the values true (1) or false (0).
-            </p>
+    <!-- ============================Topic 9============================ -->
+    <div class="detail" id="9">
+      <p class="heading">C++ Booleans</p>
+      <p class="desc">Very often, in programming, you will need a data type that can only have one of two values,
+        like:
+        <br>
+        YES / NO
+        <br>
+        ON / OFF
+        <br>
+        TRUE / FALSE
+        <br>
+        For this, C++ has a bool data type, which can take the values true (1) or false (0).
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -820,13 +820,13 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Boolean Expressions</p>
-            <p class="desc">A Boolean expression returns a boolean value that is either 1 (true) or 0 (false).
-            </p>
+      </div>
+      <p class="heading">C++ Boolean Expressions</p>
+      <p class="desc">A Boolean expression returns a boolean value that is either 1 (true) or 0 (false).
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -840,9 +840,9 @@ int main() {
 }                            
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -855,9 +855,9 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -872,48 +872,48 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
 
 
 
 
-        </div>
+    </div>
 
 
-        <!-- ============================Topic 10============================ -->
-        <div class="detail" id="10">
-            <p class="heading">C++ Conditions and If Statements</p>
-            <p class="desc">You already know that C++ supports the usual logical conditions from mathematics:
-                <br>
-                Less than: a < b <br>
-                    Less than or equal to: a <= b <br>
-                        Greater than: a > b
-                        <br>
-                        Greater than or equal to: a >= b
-                        <br>
-                        Equal to a == b
-                        <br>
-                        Not Equal to: a != b
-                        <br>
-                        You can use these conditions to perform different actions for different decisions.
-                        <br>
+    <!-- ============================Topic 10============================ -->
+    <div class="detail" id="10">
+      <p class="heading">C++ Conditions and If Statements</p>
+      <p class="desc">You already know that C++ supports the usual logical conditions from mathematics:
+        <br>
+        Less than: a < b <br>
+          Less than or equal to: a <= b <br>
+            Greater than: a > b
+            <br>
+            Greater than or equal to: a >= b
+            <br>
+            Equal to a == b
+            <br>
+            Not Equal to: a != b
+            <br>
+            You can use these conditions to perform different actions for different decisions.
+            <br>
 
-                        C++ has the following conditional statements:
-                        <br>
+            C++ has the following conditional statements:
+            <br>
 
-                        Use if to specify a block of code to be executed, if a specified condition is true
-                        <br>
-                        Use else to specify a block of code to be executed, if the same condition is false
-                        <br>
-                        Use else if to specify a new condition to test, if the first condition is false
-                        <br>
-                        Use switch to specify many alternative blocks of code to be executed
-            </p>
+            Use if to specify a block of code to be executed, if a specified condition is true
+            <br>
+            Use else to specify a block of code to be executed, if the same condition is false
+            <br>
+            Use else if to specify a new condition to test, if the first condition is false
+            <br>
+            Use switch to specify many alternative blocks of code to be executed
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -923,13 +923,13 @@ if (condition) {
                             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Else</p>
-            <p class="desc">Use the else statement to specify a block of code to be executed if the condition is false.
-            </p>
+      </div>
+      <p class="heading">C++ Else</p>
+      <p class="desc">Use the else statement to specify a block of code to be executed if the condition is false.
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -941,12 +941,12 @@ if (condition) {
                             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Else If</p>
-            <p class="desc">Use the else if statement to specify a new condition if the first condition is false.</p>
+      </div>
+      <p class="heading">C++ Else If</p>
+      <p class="desc">Use the else if statement to specify a new condition if the first condition is false.</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -960,14 +960,14 @@ if (condition1) {
                             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Short Hand If...Else (Ternary Operator)</p>
-            <p class="desc">There is also a short-hand if else, which is known as the ternary operator because it
-                consists of three operands. It can be used to replace multiple lines of code with a single line. It is
-                often used to replace simple if else statements:</p>
+      </div>
+      <p class="heading">Short Hand If...Else (Ternary Operator)</p>
+      <p class="desc">There is also a short-hand if else, which is known as the ternary operator because it
+        consists of three operands. It can be used to replace multiple lines of code with a single line. It is
+        often used to replace simple if else statements:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -987,16 +987,16 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!-- ============================Topic 11============================ -->
-        <div class="detail" id="11">
-            <p class="heading">C++ Switch Statements</p>
-            <p class="desc">Use the switch statement to select one of many code blocks to be executed.</p>
+    <!-- ============================Topic 11============================ -->
+    <div class="detail" id="11">
+      <p class="heading">C++ Switch Statements</p>
+      <p class="desc">Use the switch statement to select one of many code blocks to be executed.</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -1013,9 +1013,9 @@ switch(expression) {
                             
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 
@@ -1055,26 +1055,26 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 12============================ -->
-        <div class="detail" id="12">
-            <p class="heading">C++ While Loop</p>
-            <p class="desc">The while loop loops through a block of code as long as a specified condition is true:</p>
+    <!-- ============================Topic 12============================ -->
+    <div class="detail" id="12">
+      <p class="heading">C++ While Loop</p>
+      <p class="desc">The while loop loops through a block of code as long as a specified condition is true:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 while (condition) {
   // code block to be executed
 }
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1090,19 +1090,19 @@ int main() {
 
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 13============================ -->
-        <div class="detail" id="13">
-            <p class="heading">C++ Do/While Loop</p>
-            <p class="desc">The do/while loop is a variant of the while loop. This loop will execute the code block
-                once, before checking if the condition is true, then it will repeat the loop as long as the condition is
-                true.</p>
+    <!-- ============================Topic 13============================ -->
+    <div class="detail" id="13">
+      <p class="heading">C++ Do/While Loop</p>
+      <p class="desc">The do/while loop is a variant of the while loop. This loop will execute the code block
+        once, before checking if the condition is true, then it will repeat the loop as long as the condition is
+        true.</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
             <code class="cpp">
 do {
   // code block to be executed
@@ -1110,18 +1110,18 @@ do {
 while (condition);      
             </code>
         </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 14============================ -->
-        <div class="detail" id="14">
-            <p class="heading">C++ For Loop</p>
-            <p class="desc">When you know exactly how many times you want to loop through a block of code, use the for
-                loop instead of a while loop:</p>
+    <!-- ============================Topic 14============================ -->
+    <div class="detail" id="14">
+      <p class="heading">C++ For Loop</p>
+      <p class="desc">When you know exactly how many times you want to loop through a block of code, use the for
+        loop instead of a while loop:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 for (statement 1; statement 2; statement 3) {
   // code block to be executed
@@ -1132,20 +1132,20 @@ for (int i = 0; i < 5; i++) {
 }
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 15============================ -->
-        <div class="detail" id="15">
-            <p class="heading">C++ Break and Continue</p>
-            <p class="desc">You have already seen the break statement used in an earlier chapter of this tutorial. It
-                was used to "jump out" of a switch statement.
+    <!-- ============================Topic 15============================ -->
+    <div class="detail" id="15">
+      <p class="heading">C++ Break and Continue</p>
+      <p class="desc">You have already seen the break statement used in an earlier chapter of this tutorial. It
+        was used to "jump out" of a switch statement.
 
-                The break statement can also be used to jump out of a loop.</p>
+        The break statement can also be used to jump out of a loop.</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1169,13 +1169,13 @@ int main() {
 */
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Continue</p>
-            <p class="desc">The continue statement breaks one iteration (in the loop), if a specified condition occurs,
-                and continues with the next iteration in the loop.</p>
+      </div>
+      <p class="heading">C++ Continue</p>
+      <p class="desc">The continue statement breaks one iteration (in the loop), if a specified condition occurs,
+        and continues with the next iteration in the loop.</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -1206,33 +1206,33 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 16============================ -->
-        <div class="detail" id="16">
-            <p class="heading">C++ Arrays</p>
-            <p class="desc">Arrays are used to store multiple values in a single variable, instead of declaring separate
-                variables for each value.
+    <!-- ============================Topic 16============================ -->
+    <div class="detail" id="16">
+      <p class="heading">C++ Arrays</p>
+      <p class="desc">Arrays are used to store multiple values in a single variable, instead of declaring separate
+        variables for each value.
 
-                To declare an array, define the variable type, specify the name of the array followed by square brackets
-                and specify the number of elements it should store:</p>
+        To declare an array, define the variable type, specify the name of the array followed by square brackets
+        and specify the number of elements it should store:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Access the Elements of an Array</p>
-            <p class="desc">You access an array element by referring to the index number inside square brackets [].
+      </div>
+      <p class="heading">Access the Elements of an Array</p>
+      <p class="desc">You access an array element by referring to the index number inside square brackets [].
 
-                This statement accesses the value of the first element in cars:</p>
+        This statement accesses the value of the first element in cars:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1246,15 +1246,15 @@ int main() {
 // Outputs Volvo             
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Change an Array Element</p>
-            <p class="desc">To change the value of a specific element, refer to the index number:
-                <br>
-                cars[0] = "Opel";
-            </p>
+      </div>
+      <p class="heading">Change an Array Element</p>
+      <p class="desc">To change the value of a specific element, refer to the index number:
+        <br>
+        cars[0] = "Opel";
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1269,19 +1269,19 @@ int main() {
 // Now outputs Opel instead of Volvo             
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 17============================ -->
-        <div class="detail" id="17">
-            <p class="heading">C++ Arrays and Loops</p>
-            <p class="desc">You can loop through the array elements with the for loop.
+    <!-- ============================Topic 17============================ -->
+    <div class="detail" id="17">
+      <p class="heading">C++ Arrays and Loops</p>
+      <p class="desc">You can loop through the array elements with the for loop.
 
-                The following example outputs all elements in the cars array:</p>
+        The following example outputs all elements in the cars array:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1303,9 +1303,9 @@ Tesla
               
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1328,9 +1328,9 @@ Output :
               
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1353,14 +1353,14 @@ output :
               
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <p class="heading">The foreach Loop</p>
-            <p class="desc">There is also a "for-each loop" (introduced in C++ version 11 (2011)), which is used
-                exclusively to loop through elements in an array:</p>
+      <p class="heading">The foreach Loop</p>
+      <p class="desc">There is also a "for-each loop" (introduced in C++ version 11 (2011)), which is used
+        exclusively to loop through elements in an array:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 for (type variableName : arrayName) {
   // code block to be executed
@@ -1368,9 +1368,9 @@ for (type variableName : arrayName) {
                             
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1386,43 +1386,43 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 18============================ -->
-        <div class="detail" id="18">
-            <p class="heading">C++ Omit Array Size</p>
-            <p class="desc">In C++, you don't have to specify the size of the array. The compiler is smart enough to
-                determine the size of the array based on the number of inserted values:</p>
+    <!-- ============================Topic 18============================ -->
+    <div class="detail" id="18">
+      <p class="heading">C++ Omit Array Size</p>
+      <p class="desc">In C++, you don't have to specify the size of the array. The compiler is smart enough to
+        determine the size of the array based on the number of inserted values:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 string cars[] = {"Volvo", "BMW", "Ford"}; // Three array elements
 string cars[3] = {"Volvo", "BMW", "Ford"}; // Also three array elements          
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 19============================ -->
-        <div class="detail" id="19">
-            <p class="heading">Get the Size of an Array</p>
-            <p class="desc">To get the size of an array, you can use the sizeof() operator:
-                <br>
-                <br>
-                Why did the result show 20 instead of 5, when the array contains 5 elements?
+    <!-- ============================Topic 19============================ -->
+    <div class="detail" id="19">
+      <p class="heading">Get the Size of an Array</p>
+      <p class="desc">To get the size of an array, you can use the sizeof() operator:
+        <br>
+        <br>
+        Why did the result show 20 instead of 5, when the array contains 5 elements?
 
-                It is because the sizeof() operator returns the size of a type in bytes.
+        It is because the sizeof() operator returns the size of a type in bytes.
 
-                You learned from the Data Types chapter that an int type is usually 4 bytes, so from the example above,
-                4 x 5 (4 bytes x 5 elements) = 20 bytes.
-            </p>
+        You learned from the Data Types chapter that an int type is usually 4 bytes, so from the example above,
+        4 x 5 (4 bytes x 5 elements) = 20 bytes.
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1436,13 +1436,13 @@ output : 20
              
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <p class="desc">To find out how many elements an array has, you have to divide the size of the array by the
-                size of the data type it contains:</p>
+      <p class="desc">To find out how many elements an array has, you have to divide the size of the array by the
+        size of the data type it contains:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -1458,30 +1458,30 @@ output : 5
               
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
 
-        <!-- ============================Topic 20============================ -->
-        <div class="detail" id="20">
-            <p class="heading">C++ Multi-Dimensional Arrays</p>
-            <p class="desc">A multi-dimensional array is an array of arrays.
+    <!-- ============================Topic 20============================ -->
+    <div class="detail" id="20">
+      <p class="heading">C++ Multi-Dimensional Arrays</p>
+      <p class="desc">A multi-dimensional array is an array of arrays.
 
-                To declare a multi-dimensional array, define the variable type, specify the name of the array followed
-                by square brackets which specify how many elements the main array has, followed by another set of square
-                brackets which indicates how many elements the sub-arrays have:</p>
+        To declare a multi-dimensional array, define the variable type, specify the name of the array followed
+        by square brackets which specify how many elements the main array has, followed by another set of square
+        brackets which indicates how many elements the sub-arrays have:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 string letters[2][4];
                 
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 string letters[2][4] = {
   { "A", "B", "C", "D" },
@@ -1490,9 +1490,9 @@ string letters[2][4] = {
                 
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 string letters[2][2][2] = {
   {
@@ -1507,16 +1507,16 @@ string letters[2][2][2] = {
                 
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Access the Elements of a Multi-Dimensional Array</p>
-            <p class="desc">To access an element of a multi-dimensional array, specify an index number in each of the
-                array's dimensions.
+      </div>
+      <p class="heading">Access the Elements of a Multi-Dimensional Array</p>
+      <p class="desc">To access an element of a multi-dimensional array, specify an index number in each of the
+        array's dimensions.
 
-                This statement accesses the value of the element in the first row (0) and third column (2) of the
-                letters array.</p>
+        This statement accesses the value of the element in the first row (0) and third column (2) of the
+        letters array.</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1534,13 +1534,13 @@ output : C
               
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Change Elements in a Multi-Dimensional Array</p>
-            <p class="desc">To change the value of an element, refer to the index number of the element in each of the
-                dimensions:</p>
+      </div>
+      <p class="heading">Change Elements in a Multi-Dimensional Array</p>
+      <p class="desc">To change the value of an element, refer to the index number of the element in each of the
+        dimensions:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1559,15 +1559,15 @@ Now outputs "Z" instead of "A"
                 
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Loop Through a Multi-Dimensional Array</p>
-            <p class="desc">To loop through a multi-dimensional array, you need one loop for each of the array's
-                dimensions.
+      </div>
+      <p class="heading">Loop Through a Multi-Dimensional Array</p>
+      <p class="desc">To loop through a multi-dimensional array, you need one loop for each of the array's
+        dimensions.
 
-                The following example outputs all elements in the letters array:</p>
+        The following example outputs all elements in the letters array:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1597,20 +1597,20 @@ H
                
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 21============================ -->
-        <div class="detail" id="21">
-            <p class="heading">C++ Structures (struct)</p>
-            <p class="desc">Structures (also called structs) are a way to group several related variables into one
-                place. Each variable in the structure is known as a member of the structure.
+    <!-- ============================Topic 21============================ -->
+    <div class="detail" id="21">
+      <p class="heading">C++ Structures (struct)</p>
+      <p class="desc">Structures (also called structs) are a way to group several related variables into one
+        place. Each variable in the structure is known as a member of the structure.
 
-                Unlike an array, a structure can contain many different data types (int, string, bool, etc.).</p>
+        Unlike an array, a structure can contain many different data types (int, string, bool, etc.).</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 struct {             // Structure declaration
   int myNum;         // Member (int variable)
@@ -1618,12 +1618,12 @@ struct {             // Structure declaration
 } myStructure;       // Structure variable                       
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Access Structure Members</p>
-            <p class="desc">To access members of a structure, use the dot syntax (.):</p>
+      </div>
+      <p class="heading">Access Structure Members</p>
+      <p class="desc">To access members of a structure, use the dot syntax (.):</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1648,12 +1648,12 @@ Hello World!
                       
                     </code>
                 </pre>
-            </div>
-            <p class="heading">One Structure in Multiple Variables</p>
-            <p class="desc">You can use a comma (,) to use one structure in many variables:</p>
+      </div>
+      <p class="heading">One Structure in Multiple Variables</p>
+      <p class="desc">You can use a comma (,) to use one structure in many variables:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 struct {
   int myNum;
@@ -1661,9 +1661,9 @@ struct {
 } myStruct1, myStruct2, myStruct3; // Multiple structure variables separated with commas                 
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1697,15 +1697,15 @@ Ford Mustang 1969
                 
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Named Structures</p>
-            <p class="desc">By giving a name to the structure, you can treat it as a data type. This means that you can
-                create variables with this structure anywhere in the program at any time.
+      </div>
+      <p class="heading">Named Structures</p>
+      <p class="desc">By giving a name to the structure, you can treat it as a data type. This means that you can
+        create variables with this structure anywhere in the program at any time.
 
-                To create a named structure, put the name of the structure right after the struct keyword:</p>
+        To create a named structure, put the name of the structure right after the struct keyword:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 struct myDataType { // This structure is named "myDataType"
   int myNum;
@@ -1713,9 +1713,9 @@ struct myDataType { // This structure is named "myDataType"
 };                            
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1753,29 +1753,29 @@ Ford Mustang 1969
                            
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 22============================ -->
-        <div class="detail" id="22">
-            <p class="heading">C++ References</p>
-            <p class="desc">A reference variable is a "reference" to an existing variable, and it is created with the &
-                operator:</p>
+    <!-- ============================Topic 22============================ -->
+    <div class="detail" id="22">
+      <p class="heading">C++ References</p>
+      <p class="desc">A reference variable is a "reference" to an existing variable, and it is created with the &
+        operator:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 string food = "Pizza";  // food variable
 string &meal = food;    // reference to food                 
                     </code>
                 </pre>
-            </div>
-            <p class="desc">Now, we can use either the variable name food or the reference name meal to refer to the
-                food variable:</p>
+      </div>
+      <p class="desc">Now, we can use either the variable name food or the reference name meal to refer to the
+        food variable:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1792,32 +1792,32 @@ int main() {
      
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 23============================ -->
-        <div class="detail" id="23">
-            <p class="heading">Memory Address</p>
-            <p class="desc">In the example from the previous page, the & operator was used to create a reference
-                variable. But it can also be used to get the memory address of a variable; which is the location of
-                where the variable is stored on the computer.
-                <br>
-                <br>
-                When a variable is created in C++, a memory address is assigned to the variable. And when we assign a
-                value to the variable, it is stored in this memory address.
-                <br>
-                <br>
+    <!-- ============================Topic 23============================ -->
+    <div class="detail" id="23">
+      <p class="heading">Memory Address</p>
+      <p class="desc">In the example from the previous page, the & operator was used to create a reference
+        variable. But it can also be used to get the memory address of a variable; which is the location of
+        where the variable is stored on the computer.
+        <br>
+        <br>
+        When a variable is created in C++, a memory address is assigned to the variable. And when we assign a
+        value to the variable, it is stored in this memory address.
+        <br>
+        <br>
 
-                To access it, use the & operator, and the result will represent where the variable is stored:
-                <br>
-                <br>
-                Note: The memory address is in hexadecimal form (0x..). Note that you may not get the same result in
-                your program.
-            </p>
+        To access it, use the & operator, and the result will represent where the variable is stored:
+        <br>
+        <br>
+        Note: The memory address is in hexadecimal form (0x..). Note that you may not get the same result in
+        your program.
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1832,18 +1832,18 @@ int main() {
                  
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 24============================ -->
-        <div class="detail" id="24">
-            <p class="heading">C++ Pointers</p>
-            <p class="desc">You learned from the previous chapter, that we can get the memory address of a variable by
-                using the & operator:</p>
+    <!-- ============================Topic 24============================ -->
+    <div class="detail" id="24">
+      <p class="heading">C++ Pointers</p>
+      <p class="desc">You learned from the previous chapter, that we can get the memory address of a variable by
+        using the & operator:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1860,10 +1860,10 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1888,16 +1888,16 @@ int main() {
                             
                     </code>
                 </pre>
-            </div>
+      </div>
 
 
-            <p class="heading">C++ Dereference</p>
-            <p class="desc">In the example from the previous page, we used the pointer variable to get the memory
-                address of a variable (used together with the & reference operator). However, you can also use the
-                pointer to get the value of the variable, by using the * operator (the dereference operator):</p>
+      <p class="heading">C++ Dereference</p>
+      <p class="desc">In the example from the previous page, we used the pointer variable to get the memory
+        address of a variable (used together with the & reference operator). However, you can also use the
+        pointer to get the value of the variable, by using the * operator (the dereference operator):</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -1917,36 +1917,36 @@ int main() {
                    
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 25============================ -->
-        <div class="detail" id="25">
-            <p class="heading">C++ Create a Function
-            </p>
-            <p class="desc">A function is a block of code which only runs when it is called.
-                <br>
-                <br>
-                You can pass data, known as parameters, into a function.
-                <br>
-                <br>
+    <!-- ============================Topic 25============================ -->
+    <div class="detail" id="25">
+      <p class="heading">C++ Create a Function
+      </p>
+      <p class="desc">A function is a block of code which only runs when it is called.
+        <br>
+        <br>
+        You can pass data, known as parameters, into a function.
+        <br>
+        <br>
 
-                Functions are used to perform certain actions, and they are important for reusing code: Define the code
-                once, and use it many times.
-                <br>
-                <br>
-                C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also
-                create your own functions to perform certain actions.
-                <br>
-                <br>
+        Functions are used to perform certain actions, and they are important for reusing code: Define the code
+        once, and use it many times.
+        <br>
+        <br>
+        C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also
+        create your own functions to perform certain actions.
+        <br>
+        <br>
 
-                To create (often referred to as declare) a function, specify the name of the function, followed by
-                parentheses ():
-            </p>
+        To create (often referred to as declare) a function, specify the name of the function, followed by
+        parentheses ():
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 void myFunction() {
@@ -1954,20 +1954,20 @@ void myFunction() {
 }              
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Call a Function</p>
-            <p class="desc">Declared functions are not executed immediately. They are "saved for later use", and will be
-                executed later, when they are called.
-                <br>
-                <br>
-                To call a function, write the function's name followed by two parentheses () and a semicolon ;
-                <br>
-                <br>
-                In the following example, myFunction() is used to print a text (the action), when it is called:
-            </p>
+      </div>
+      <p class="heading">Call a Function</p>
+      <p class="desc">Declared functions are not executed immediately. They are "saved for later use", and will be
+        executed later, when they are called.
+        <br>
+        <br>
+        To call a function, write the function's name followed by two parentheses () and a semicolon ;
+        <br>
+        <br>
+        In the following example, myFunction() is used to print a text (the action), when it is called:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -1986,9 +1986,9 @@ int main() {
                     
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2009,28 +2009,28 @@ int main() {
                     
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Function Declaration and Definition</p>
-            <p class="desc">A C++ function consist of two parts:
-                <br>
-                <br>
-                Declaration: the return type, the name of the function, and parameters (if any)
-                <br>
-                <br>
-                Definition: the body of the function (code to be executed)
-            </p>
+      </div>
+      <p class="heading">Function Declaration and Definition</p>
+      <p class="desc">A C++ function consist of two parts:
+        <br>
+        <br>
+        Declaration: the return type, the name of the function, and parameters (if any)
+        <br>
+        <br>
+        Definition: the body of the function (code to be executed)
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 void myFunction() { // declaration
   // the body of the function (definition)
 }                  
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2050,32 +2050,32 @@ void myFunction() {
 }
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 26============================ -->
-        <div class="detail" id="26">
-            <p class="heading">C++ Function Parameters</p>
-            <p class="desc">Information can be passed to functions as a parameter. Parameters act as variables inside
-                the function.
-                <br>
-                <br>
-                Parameters are specified after the function name, inside the parentheses. You can add as many parameters
-                as you want, just separate them with a comma:
-            </p>
+    <!-- ============================Topic 26============================ -->
+    <div class="detail" id="26">
+      <p class="heading">C++ Function Parameters</p>
+      <p class="desc">Information can be passed to functions as a parameter. Parameters act as variables inside
+        the function.
+        <br>
+        <br>
+        Parameters are specified after the function name, inside the parentheses. You can add as many parameters
+        as you want, just separate them with a comma:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 void functionName(parameter1, parameter2, parameter3) {
   // code to be executed
 }                
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -2097,17 +2097,17 @@ int main() {
 
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Default Parameters</p>
-            <p class="desc">You can also use a default parameter value, by using the equals sign (=).
-                <br>
-                <br>
+      </div>
+      <p class="heading">C++ Default Parameters</p>
+      <p class="desc">You can also use a default parameter value, by using the equals sign (=).
+        <br>
+        <br>
 
-                If we call the function without an argument, it uses the default value ("Norway"):
-            </p>
+        If we call the function without an argument, it uses the default value ("Norway"):
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -2130,12 +2130,12 @@ int main() {
 // USA                  
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Multiple Parameters</p>
-            <p class="desc">Inside the function, you can add as many parameters as you want:</p>
+      </div>
+      <p class="heading">C++ Multiple Parameters</p>
+      <p class="desc">Inside the function, you can add as many parameters as you want:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -2156,14 +2156,14 @@ int main() {
 // Anja Refsnes. 30 years old.                     
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ The Return Keyword</p>
-            <p class="desc">The void keyword, used in the previous examples, indicates that the function should not
-                return a value. If you want the function to return a value, you can use a data type (such as int,
-                string, etc.) instead of void, and use the return keyword inside the function:</p>
+      </div>
+      <p class="heading">C++ The Return Keyword</p>
+      <p class="desc">The void keyword, used in the previous examples, indicates that the function should not
+        return a value. If you want the function to return a value, you can use a data type (such as int,
+        string, etc.) instead of void, and use the return keyword inside the function:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2180,9 +2180,9 @@ int main() {
                    
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2200,9 +2200,9 @@ int main() {
                    
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2221,14 +2221,14 @@ int main() {
                    
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Functions - Pass By Reference</p>
-            <p class="desc">In the examples from the previous page, we used normal variables when we passed parameters
-                to a function. You can also pass a reference to the function. This can be useful when you need to change
-                the value of the arguments:</p>
+      </div>
+      <p class="heading">C++ Functions - Pass By Reference</p>
+      <p class="desc">In the examples from the previous page, we used normal variables when we passed parameters
+        to a function. You can also pass a reference to the function. This can be useful when you need to change
+        the value of the arguments:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2263,12 +2263,12 @@ After swap:
                   
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Pass Array to a Function</p>
-            <p class="desc">You can also pass arrays to a function:</p>
+      </div>
+      <p class="heading">C++ Pass Array to a Function</p>
+      <p class="desc">You can also pass arrays to a function:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;  
 using namespace std;  
@@ -2292,31 +2292,31 @@ output :
 50                           
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 27============================ -->
-        <div class="detail" id="27">
-            <p class="heading">Function Overloading</p>
-            <p class="desc">With function overloading, multiple functions can have the same name with different
-                parameters:</p>
+    <!-- ============================Topic 27============================ -->
+    <div class="detail" id="27">
+      <p class="heading">Function Overloading</p>
+      <p class="desc">With function overloading, multiple functions can have the same name with different
+        parameters:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 int myFunction(int x)
 float myFunction(float x)
 double myFunction(double x, double y)               
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <p class="desc">Consider the following example, which have two functions that add numbers of different type:
-            </p>
+      <p class="desc">Consider the following example, which have two functions that add numbers of different type:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2339,15 +2339,15 @@ int main() {
 
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <p class="desc">Instead of defining two functions that should do the same thing, it is better to overload
-                one.
+      <p class="desc">Instead of defining two functions that should do the same thing, it is better to overload
+        one.
 
-                In the example below, we overload the plusFunc function to work for both int and double:</p>
+        In the example below, we overload the plusFunc function to work for both int and double:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2372,23 +2372,23 @@ Int: 13
 Double: 10.56                       
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 28============================ -->
-        <div class="detail" id="28">
-            <p class="heading">C++ Recursion</p>
-            <p class="desc">Recursion is the technique of making a function call itself. This technique provides a way
-                to break complicated problems down into simple problems which are easier to solve.
-                <br>
-                <br>
-                Recursion may be a bit difficult to understand. The best way to figure out how it works is to experiment
-                with it.
-            </p>
+    <!-- ============================Topic 28============================ -->
+    <div class="detail" id="28">
+      <p class="heading">C++ Recursion</p>
+      <p class="desc">Recursion is the technique of making a function call itself. This technique provides a way
+        to break complicated problems down into simple problems which are easier to solve.
+        <br>
+        <br>
+        Recursion may be a bit difficult to understand. The best way to figure out how it works is to experiment
+        with it.
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2409,16 +2409,16 @@ int main() {
 output : 55                     
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Example Explained</p>
-            <p class="desc">When the sum() function is called, it adds parameter k to the sum of all numbers smaller
-                than k and returns the result. When k becomes 0, the function just returns 0. When running, the program
-                follows these steps:
+      </div>
+      <p class="heading">Example Explained</p>
+      <p class="desc">When the sum() function is called, it adds parameter k to the sum of all numbers smaller
+        than k and returns the result. When k becomes 0, the function just returns 0. When running, the program
+        follows these steps:
 
-                10 + sum(9)</p>
+        10 + sum(9)</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 10 + sum(9)
 10 + ( 9 + sum(8) )
@@ -2430,39 +2430,39 @@ output : 55
 Since the function does not call itself when k is 0, the program stops there and returns the result.
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 29============================ -->
-        <div class="detail" id="29">
-            <p class="heading">C++ OOP</p>
-            <p class="desc">OOP stands for Object-Oriented Programming.
-                <br>
-                <br>
-                Procedural programming is about writing procedures or functions that perform operations on the data,
-                while object-oriented programming is about creating objects that contain both data and functions.
-            </p>
-            <p class="heading">C++ Classes and Objects</p>
-            <p class="desc">C++ is an object-oriented programming language.
-                <br><br>
-                Everything in C++ is associated with classes and objects, along with its attributes and methods. For
-                example: in real life, a car is an object. The car has attributes, such as weight and color, and
-                methods, such as drive and brake.
+    <!-- ============================Topic 29============================ -->
+    <div class="detail" id="29">
+      <p class="heading">C++ OOP</p>
+      <p class="desc">OOP stands for Object-Oriented Programming.
+        <br>
+        <br>
+        Procedural programming is about writing procedures or functions that perform operations on the data,
+        while object-oriented programming is about creating objects that contain both data and functions.
+      </p>
+      <p class="heading">C++ Classes and Objects</p>
+      <p class="desc">C++ is an object-oriented programming language.
+        <br><br>
+        Everything in C++ is associated with classes and objects, along with its attributes and methods. For
+        example: in real life, a car is an object. The car has attributes, such as weight and color, and
+        methods, such as drive and brake.
 
-                <br><br>
-                Attributes and methods are basically variables and functions that belongs to the class. These are often
-                referred to as "class members".
-                <br><br>
+        <br><br>
+        Attributes and methods are basically variables and functions that belongs to the class. These are often
+        referred to as "class members".
+        <br><br>
 
-                A class is a user-defined data type that we can use in our program, and it works as an object
-                constructor, or a "blueprint" for creating objects
-            </p>
+        A class is a user-defined data type that we can use in our program, and it works as an object
+        constructor, or a "blueprint" for creating objects
+      </p>
 
-            <p class="heading">Create a Class</p>
-            <p class="desc">To create a class, use the class keyword:</p>
-            <div class="code">
-                <pre>
+      <p class="heading">Create a Class</p>
+      <p class="desc">To create a class, use the class keyword:</p>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 class MyClass {       // The class
   public:             // Access specifier
@@ -2471,18 +2471,18 @@ class MyClass {       // The class
 };                  
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Create an Object</p>
-            <p class="desc">In C++, an object is created from a class. We have already created the class named MyClass,
-                so now we can use this to create objects.
-                <br><br>
-                To create an object of MyClass, specify the class name, followed by the object name.
-                <br><br>
+      </div>
+      <p class="heading">Create an Object</p>
+      <p class="desc">In C++, an object is created from a class. We have already created the class named MyClass,
+        so now we can use this to create objects.
+        <br><br>
+        To create an object of MyClass, specify the class name, followed by the object name.
+        <br><br>
 
-                To access the class attributes (myNum and myString), use the dot syntax (.) on the object:
-            </p>
-            <div class="code">
-                <pre>
+        To access the class attributes (myNum and myString), use the dot syntax (.) on the object:
+      </p>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -2512,12 +2512,12 @@ Some text
                  
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Multiple Objects</p>
-            <p class="desc">You can create multiple objects of one class:</p>
+      </div>
+      <p class="heading">Multiple Objects</p>
+      <p class="desc">You can create multiple objects of one class:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -2551,31 +2551,31 @@ BMW X5 1999
 Ford Mustang 1969
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 30============================ -->
-        <div class="detail" id="30">
-            <p class="heading">C++ Class Methods</p>
-            <p class="desc">Methods are functions that belongs to the class.
-                <br><br>
-                There are two ways to define functions that belongs to a class:
-                <br><br>
+    <!-- ============================Topic 30============================ -->
+    <div class="detail" id="30">
+      <p class="heading">C++ Class Methods</p>
+      <p class="desc">Methods are functions that belongs to the class.
+        <br><br>
+        There are two ways to define functions that belongs to a class:
+        <br><br>
 
-                Inside class definition
-                <br><br>
-                Outside class definition
-                <br><br>
-                In the following example, we define a function inside the class, and we name it "myMethod".
-                <br><br>
+        Inside class definition
+        <br><br>
+        Outside class definition
+        <br><br>
+        In the following example, we define a function inside the class, and we name it "myMethod".
+        <br><br>
 
-                Note: You access methods just like you access attributes; by creating an object of the class and using
-                the dot syntax (.):
-            </p>
+        Note: You access methods just like you access attributes; by creating an object of the class and using
+        the dot syntax (.):
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 Inside Example
 
@@ -2597,9 +2597,9 @@ int main() {
 output : Hello World!                    
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 Outside Example
 
@@ -2625,12 +2625,12 @@ int main() {
 output : Hello World!                    
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Parameters</p>
-            <p class="desc">You can also add parameters:</p>
+      </div>
+      <p class="heading">Parameters</p>
+      <p class="desc">You can also add parameters:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2652,22 +2652,22 @@ int main() {
 output : 200                         
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
 
-        <!-- ============================Topic 31============================ -->
-        <div class="detail" id="31">
-            <p class="heading">C++ Constructors</p>
-            <p class="desc">A constructor in C++ is a special method that is automatically called when an object of a
-                class is created.
-                <br><br>
-                To create a constructor, use the same name as the class, followed by parentheses ():
-            </p>
+    <!-- ============================Topic 31============================ -->
+    <div class="detail" id="31">
+      <p class="heading">C++ Constructors</p>
+      <p class="desc">A constructor in C++ is a special method that is automatically called when an object of a
+        class is created.
+        <br><br>
+        To create a constructor, use the same name as the class, followed by parentheses ():
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2686,19 +2686,19 @@ int main() {
 output : Hello World!                   
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Constructor Parameters</p>
-            <p class="desc">Constructors can also take parameters (just like regular functions), which can be useful for
-                setting initial values for attributes.
-                <br><br>
-                The following class have brand, model and year attributes, and a constructor with different parameters.
-                Inside the constructor we set the attributes equal to the constructor parameters (brand=x, etc). When we
-                call the constructor (by creating an object of the class), we pass parameters to the constructor, which
-                will set the value of the corresponding attributes to the same:
-            </p>
+      </div>
+      <p class="heading">Constructor Parameters</p>
+      <p class="desc">Constructors can also take parameters (just like regular functions), which can be useful for
+        setting initial values for attributes.
+        <br><br>
+        The following class have brand, model and year attributes, and a constructor with different parameters.
+        Inside the constructor we set the attributes equal to the constructor parameters (brand=x, etc). When we
+        call the constructor (by creating an object of the class), we pass parameters to the constructor, which
+        will set the value of the corresponding attributes to the same:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2731,9 +2731,9 @@ BMW X5 1999
 Ford Mustang 1969
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2770,18 +2770,18 @@ BMW X5 1999
 Ford Mustang 1969
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 32============================ -->
-        <div class="detail" id="32">
-            <p class="heading">C++ Access Specifiers</p>
-            <p class="desc">By now, you are quite familiar with the public keyword that appears in all of our class
-                examples:</p>
+    <!-- ============================Topic 32============================ -->
+    <div class="detail" id="32">
+      <p class="heading">C++ Access Specifiers</p>
+      <p class="desc">By now, you are quite familiar with the public keyword that appears in all of our class
+        examples:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2804,22 +2804,22 @@ int main() {
 output : 15                    
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <p class="desc">In C++, there are three access specifiers:
-                <br>
-                public - members are accessible from outside the class
-                <br>
-                private - members cannot be accessed (or viewed) from outside the class
-                <br>
-                protected - members cannot be accessed from outside the class, however, they can be accessed in
-                inherited classes. You will learn more about Inheritance later.
-                <br>
-                In the following example, we demonstrate the differences between public and private members:
-            </p>
+      <p class="desc">In C++, there are three access specifiers:
+        <br>
+        public - members are accessible from outside the class
+        <br>
+        private - members cannot be accessed (or viewed) from outside the class
+        <br>
+        protected - members cannot be accessed from outside the class, however, they can be accessed in
+        inherited classes. You will learn more about Inheritance later.
+        <br>
+        In the following example, we demonstrate the differences between public and private members:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2842,13 +2842,13 @@ Line 8: error: 'int MyClass::y' is private
 Line 14: error: within this context                           
                     </code>
                 </pre>
-            </div>
+      </div>
 
-            <p class="desc">Note: By default, all members of a class are private if you don't specify an access
-                specifier:</p>
+      <p class="desc">Note: By default, all members of a class are private if you don't specify an access
+        specifier:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 class MyClass {
   int x;   // Private attribute
@@ -2856,23 +2856,23 @@ class MyClass {
 };                        
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 33============================ -->
-        <div class="detail" id="33">
-            <p class="heading">C++ Encapsulation</p>
-            <p class="desc">The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To
-                achieve this, you must declare class variables/attributes as private (cannot be accessed from outside
-                the class). If you want others to read or modify the value of a private member, you can provide public
-                get and set methods.</p>
-            <br><br>
-            <p class="heading">Access Private Members</p>
-            <p class="desc">To access a private attribute, use public "get" and "set" methods:</p>
+    <!-- ============================Topic 33============================ -->
+    <div class="detail" id="33">
+      <p class="heading">C++ Encapsulation</p>
+      <p class="desc">The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To
+        achieve this, you must declare class variables/attributes as private (cannot be accessed from outside
+        the class). If you want others to read or modify the value of a private member, you can provide public
+        get and set methods.</p>
+      <br><br>
+      <p class="heading">Access Private Members</p>
+      <p class="desc">To access a private attribute, use public "get" and "set" methods:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -2899,44 +2899,44 @@ int main() {
 output : 50000             
                     </code>
                 </pre>
-            </div>
-            <p class="desc">Example explained
-                <br><br>
-                The salary attribute is private, which have restricted access.
-                <br><br>
+      </div>
+      <p class="desc">Example explained
+        <br><br>
+        The salary attribute is private, which have restricted access.
+        <br><br>
 
-                The public setSalary() method takes a parameter (s) and assigns it to the salary attribute (salary = s).
-                <br><br>
+        The public setSalary() method takes a parameter (s) and assigns it to the salary attribute (salary = s).
+        <br><br>
 
-                The public getSalary() method returns the value of the private salary attribute.
-                <br><br>
+        The public getSalary() method returns the value of the private salary attribute.
+        <br><br>
 
-                Inside main(), we create an object of the Employee class. Now we can use the setSalary() method to set
-                the value of the private attribute to 50000. Then we call the getSalary() method on the object to return
-                the value.
-            </p>
-        </div>
+        Inside main(), we create an object of the Employee class. Now we can use the setSalary() method to set
+        the value of the private attribute to 50000. Then we call the getSalary() method on the object to return
+        the value.
+      </p>
+    </div>
 
 
-        <!-- ============================Topic 34============================ -->
-        <div class="detail" id="34">
-            <p class="heading">C++ Inheritance</p>
-            <p class="desc">In C++, it is possible to inherit attributes and methods from one class to another. We group
-                the "inheritance concept" into two categories:
-                <br><br>
-                derived class (child) - the class that inherits from another class
-                <br><br>
-                base class (parent) - the class being inherited from
-                <br><br>
-                To inherit from a class, use the : symbol.
-                <br><br>
+    <!-- ============================Topic 34============================ -->
+    <div class="detail" id="34">
+      <p class="heading">C++ Inheritance</p>
+      <p class="desc">In C++, it is possible to inherit attributes and methods from one class to another. We group
+        the "inheritance concept" into two categories:
+        <br><br>
+        derived class (child) - the class that inherits from another class
+        <br><br>
+        base class (parent) - the class being inherited from
+        <br><br>
+        To inherit from a class, use the : symbol.
+        <br><br>
 
-                In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class
-                (parent):
-            </p>
+        In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class
+        (parent):
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;string&gt;
@@ -2969,15 +2969,15 @@ Tuut, tuut!
 Ford Mustang              
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Multilevel Inheritance</p>
-            <p class="desc">A class can also be derived from one class, which is already derived from another class.
+      </div>
+      <p class="heading">C++ Multilevel Inheritance</p>
+      <p class="desc">A class can also be derived from one class, which is already derived from another class.
 
-                In the following example, MyGrandChild is derived from class MyChild (which is derived from MyClass).
-            </p>
+        In the following example, MyGrandChild is derived from class MyChild (which is derived from MyClass).
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -3007,12 +3007,12 @@ Output :
 Some content in parent class.                     
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Multiple Inheritance</p>
-            <p class="desc">A class can also be derived from more than one base class, using a comma-separated list:</p>
+      </div>
+      <p class="heading">C++ Multiple Inheritance</p>
+      <p class="desc">A class can also be derived from more than one base class, using a comma-separated list:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -3048,15 +3048,15 @@ Some content in parent class.
 Some content in another class.                          
                     </code>
                 </pre>
-            </div>
-            <p class="heading">C++ Inheritance Access</p>
-            <p class="desc">You learned from the Access Specifiers chapter that there are three specifiers available in
-                C++. Until now, we have only used public (members of a class are accessible from outside the class) and
-                private (members can only be accessed within the class). The third specifier, protected, is similar to
-                private, but it can also be accessed in the inherited class:</p>
+      </div>
+      <p class="heading">C++ Inheritance Access</p>
+      <p class="desc">You learned from the Access Specifiers chapter that there are three specifiers available in
+        C++. Until now, we have only used public (members of a class are accessible from outside the class) and
+        private (members can only be accessed within the class). The third specifier, protected, is similar to
+        private, but it can also be accessed in the inherited class:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -3092,46 +3092,46 @@ Salary: 50000
 Bonus: 15000                         
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
-        <!-- ============================Topic 35============================ -->
-        <div class="detail" id="35">
-            <p class="heading">C++ Files</p>
-            <p class="desc">The fstream library allows us to work with files.
-                <br>
-                <br>
-                To use the fstream library, include both the standard &lt;iostream&gt; AND the &lt;fstream&gt; header
-                file:
-            </p>
+    <!-- ============================Topic 35============================ -->
+    <div class="detail" id="35">
+      <p class="heading">C++ Files</p>
+      <p class="desc">The fstream library allows us to work with files.
+        <br>
+        <br>
+        To use the fstream library, include both the standard &lt;iostream&gt; AND the &lt;fstream&gt; header
+        file:
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
             
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;             
                     </code>
                 </pre>
-            </div>
-            <p class="desc">There are three classes included in the fstream library, which are used to create, write or
-                read files:
-                <br><br>
-                ofstream : Creates and writes to files
-                <br><br>
-                ifstream : Reads from files
-                <br><br>
-                fstream : A combination of ofstream and ifstream: creates, reads, and writes to files
-            </p>
-            <p class="heading">Create and Write To a File</p>
-            <p class="desc">To create a file, use either the ofstream or fstream class, and specify the name of the
-                file.
-                <br><br>
-                To write to the file, use the insertion operator (<<).< /p>
+      </div>
+      <p class="desc">There are three classes included in the fstream library, which are used to create, write or
+        read files:
+        <br><br>
+        ofstream : Creates and writes to files
+        <br><br>
+        ifstream : Reads from files
+        <br><br>
+        fstream : A combination of ofstream and ifstream: creates, reads, and writes to files
+      </p>
+      <p class="heading">Create and Write To a File</p>
+      <p class="desc">To create a file, use either the ofstream or fstream class, and specify the name of the
+        file.
+        <br><br>
+        To write to the file, use the insertion operator (<<).< /p>
 
-                    <div class="code">
-                        <pre>
+          <div class="code">
+            <pre>
                             <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -3150,17 +3150,17 @@ int main() {
 }                     
                             </code>
                         </pre>
-                    </div>
-                    <p class="heading">Read a File</p>
-                    <p class="desc">To read from a file, use either the ifstream or fstream class, and the name of the
-                        file.
-                        <br>
-                        Note that we also use a while loop together with the getline() function (which belongs to the
-                        ifstream class) to read the file line by line, and to print the content of the file:
-                    </p>
+          </div>
+          <p class="heading">Read a File</p>
+          <p class="desc">To read from a file, use either the ifstream or fstream class, and the name of the
+            file.
+            <br>
+            Note that we also use a while loop together with the getline() function (which belongs to the
+            ifstream class) to read the file line by line, and to print the content of the file:
+          </p>
 
-                    <div class="code">
-                        <pre>
+          <div class="code">
+            <pre>
                             <code class="cpp">
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
@@ -3196,42 +3196,42 @@ output :
 Files can be tricky, but it is fun enough!                          
                             </code>
                         </pre>
-                    </div>
-        </div>
+          </div>
+    </div>
 
 
 
-        <!-- ============================Topic 36============================ -->
-        <div class="detail" id="36">
-            <p class="heading">C++ Exceptions</p>
-            <p class="desc">When executing C++ code, different errors can occur: coding errors made by the programmer,
-                errors due to wrong input, or other unforeseeable things.
-                <br><br>
-                When an error occurs, C++ will normally stop and generate an error message. The technical term for this
-                is: C++ will throw an exception (throw an error).
+    <!-- ============================Topic 36============================ -->
+    <div class="detail" id="36">
+      <p class="heading">C++ Exceptions</p>
+      <p class="desc">When executing C++ code, different errors can occur: coding errors made by the programmer,
+        errors due to wrong input, or other unforeseeable things.
+        <br><br>
+        When an error occurs, C++ will normally stop and generate an error message. The technical term for this
+        is: C++ will throw an exception (throw an error).
 
-            </p>
-            <p class="heading">C++ try and catch</p>
-            <p class="desc">Exception handling in C++ consist of three keywords: try, throw and catch:
-                <br><br>
+      </p>
+      <p class="heading">C++ try and catch</p>
+      <p class="desc">Exception handling in C++ consist of three keywords: try, throw and catch:
+        <br><br>
 
-                The try statement allows you to define a block of code to be tested for errors while it is being
-                executed.
-                <br><br>
+        The try statement allows you to define a block of code to be tested for errors while it is being
+        executed.
+        <br><br>
 
-                The throw keyword throws an exception when a problem is detected, which lets us create a custom error.
-                <br><br>
+        The throw keyword throws an exception when a problem is detected, which lets us create a custom error.
+        <br><br>
 
-                The catch statement allows you to define a block of code to be executed, if an error occurs in the try
-                block.
-                <br><br>
+        The catch statement allows you to define a block of code to be executed, if an error occurs in the try
+        block.
+        <br><br>
 
-                The try and catch keywords come in pairs:
+        The try and catch keywords come in pairs:
 
-            </p>
+      </p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 try {
   // Block of code to try
@@ -3242,9 +3242,9 @@ catch () {
 }             
                     </code>
                 </pre>
-            </div>
-            <div class="code">
-                <pre>
+      </div>
+      <div class="code">
+        <pre>
                     <code class="cpp">
 #include &lt;iostream&gt;
 using namespace std;
@@ -3269,13 +3269,13 @@ Access denied - You must be at least 18 years old.
 Age is: 15            
                     </code>
                 </pre>
-            </div>
-            <p class="heading">Handle Any Type of Exceptions (...)</p>
-            <p class="desc">If you do not know the throw type used in the try block, you can use the "three dots" syntax
-                (...) inside the catch block, which will handle any type of exception:</p>
+      </div>
+      <p class="heading">Handle Any Type of Exceptions (...)</p>
+      <p class="desc">If you do not know the throw type used in the try block, you can use the "three dots" syntax
+        (...) inside the catch block, which will handle any type of exception:</p>
 
-            <div class="code">
-                <pre>
+      <div class="code">
+        <pre>
                     <code class="cpp">
                     
 #include &lt;iostream&gt;
@@ -3298,8 +3298,8 @@ int main() {
 output : Access denied - You must be at least 18 years old.
                     </code>
                 </pre>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
 
@@ -3308,8 +3308,8 @@ output : Access denied - You must be at least 18 years old.
 
 
 
-    </section>
-    <!-- ================================================ -->
+  </section>
+  <!-- ================================================ -->
 
 
 </body>

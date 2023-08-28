@@ -94,11 +94,9 @@ body {
   width: 100%;
   height: inherit;
   border-radius: inherit;
-  background: linear-gradient(
-    82.3deg,
-    rgb(139, 98, 202) 10.8%,
-    rgba(99, 88, 238, 1) 94.3%
-  );
+  background: linear-gradient(82.3deg,
+      rgb(139, 98, 202) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%);
   transition: all 0.475s;
 }
 
@@ -202,29 +200,29 @@ body {
   width: 80%;
 }
 
-#checkbox2:checked + .toggle2 .bars {
+#checkbox2:checked+.toggle2 .bars {
   position: absolute;
   transition-duration: 0.5s;
 }
 
-#checkbox2:checked + .toggle2 #bar5 {
+#checkbox2:checked+.toggle2 #bar5 {
   transform: scaleX(0);
   transition-duration: 0.5s;
 }
 
-#checkbox2:checked + .toggle2 #bar4 {
+#checkbox2:checked+.toggle2 #bar4 {
   width: 100%;
   transform: rotate(45deg);
   transition-duration: 0.5s;
 }
 
-#checkbox2:checked + .toggle2 #bar6 {
+#checkbox2:checked+.toggle2 #bar6 {
   width: 100%;
   transform: rotate(-45deg);
   transition-duration: 0.5s;
 }
 
-#checkbox2:checked + .toggle2 {
+#checkbox2:checked+.toggle2 {
   transition-duration: 0.5s;
   transform: rotate(180deg);
 }

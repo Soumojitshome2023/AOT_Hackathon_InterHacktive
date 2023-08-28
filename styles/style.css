@@ -5,10 +5,11 @@
   scroll-behavior: smooth;
 }
 
-main{
+main {
   /* background-color: #ffffffad; */
   background-color: #6363639f;
 }
+
 :root {
   --dark-blue: rgb(3, 0, 51);
   --light-blue: rgb(96, 88, 214);
@@ -32,10 +33,10 @@ body {
   /* border: 3px solid rgb(38, 0, 255); */
   height: fit-content;
   text-align: center;
- 
+
   background-color: rgba(92, 92, 92, 0.87);
   /* background-image: linear-gradient(var(--dark-blue) 50%, white); */
-  
+
   /* box-shadow: 0 0 10px 5px rgb(27, 27, 26); */
   display: flex;
   justify-content: space-evenly;
