@@ -21,20 +21,21 @@
     width: fit-content;
     /* overflow: hidden; */
 
-    /* min-height: 100vh; */
-    /* height: fit-content; */
+    min-height: 100vh;
+    height: fit-content;
     /* height: 100vh; */
     /* background-attachment: fixed; */
     /* background-size: contain; */
     filter: brightness(60%) contrast(100%);
     z-index: -3;
-    
+
 
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 #home .heading {
     /* border: 3px solid yellow; */
     /* position: fixed; */
@@ -49,7 +50,7 @@ a{
     align-items: center;
     flex-direction: column;
     /* background-image: linear-gradient(90deg, #2608534b, #3d12074d); */
-    
+
 }
 
 #home .heading p {
