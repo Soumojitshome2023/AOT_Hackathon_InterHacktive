@@ -20,7 +20,7 @@ In essence, this elegantly designed website not only offers an alternative to tr
 
 **To deploy this project run :**
 
-[https://aot-hackathon-riot.vercel.app]()
+[https://aot-hackathon-riot.vercel.app](https://aot-hackathon-riot.vercel.app/)
 
 ## Video Link :
 
@@ -52,7 +52,7 @@ In essence, this elegantly designed website not only offers an alternative to tr
 
 ![1693221306173](image/readme/1693221306173.png)
 
-## Frequently Asked Questions (FAQ) : 
+## Frequently Asked Questions (FAQ) :
 
 ### 1. Is this website completely free?
 
@@ -66,9 +66,7 @@ You can access the courses by simply visiting our website and navigating to the 
 
 **Absolutely!** Our courses are designed to cater to learners of all levels, including beginners. We provide comprehensive introductory material to help you get started.
 
-
 ## Challenges in Creating Our Learning Website with Comment Section
-
 
 Building a comprehensive learning platform with interactive features like a comment section can be a rewarding endeavor, but it comes with its own set of challenges. Here are some of the obstacles we tackled during the development of our website:
 
@@ -109,8 +107,6 @@ Building a comprehensive learning platform with interactive features like a comm
 ## **Subrata Paul**
 
 [![GitHub](https://img.shields.io/badge/github-0A66C2?style=for-the-badge&logo=github&logoColor=white&color=black)](https://github.com/SubrataPaul1) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subrata-pal-37a146241/)
-
-
 
 ## Future Plans :
 
