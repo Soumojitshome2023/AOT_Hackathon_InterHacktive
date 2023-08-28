@@ -90,7 +90,8 @@ a {
   justify-content: center;
   align-items: center;
   width: fit-content;
-  height: 3rem;
+  /* height: 3rem; */
+  height: fit-content;
   background-size: 300% 300%;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
