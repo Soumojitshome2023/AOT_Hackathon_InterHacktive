@@ -8,7 +8,7 @@ Furthermore, the website includes a dedicated section for college assignments. T
 
 In essence, this elegantly designed website not only offers an alternative to traditional induction programs but also serves as a dynamic platform for nurturing programming proficiency and academic growth. Through its unique blend of informative content, interactive senior-junior interaction, and comprehensive assignment assistance, it emerges as an indispensable resource for the holistic development of college students.
 
-## Features
+## Features :
 
 - Google sign Up
 - Responsive website
@@ -16,11 +16,15 @@ In essence, this elegantly designed website not only offers an alternative to tr
 - College assignment( To help juniors for ca1 & ca2 assignment & moodle problem)(Not finish yet)
 - Problem of The Day for enthusiastic juniors & also swags
 
-## Deployment
+## Deployment :
 
 **To deploy this project run :**
 
 [https://aot-hackathon-riot.vercel.app]()
+
+## Video Link :
+
+[https://youtu.be/LAy6W8VNz_M](https://youtu.be/LAy6W8VNz_M)
 
 ## Screenshots :
 
@@ -48,7 +52,7 @@ In essence, this elegantly designed website not only offers an alternative to tr
 
 ![1693221306173](image/readme/1693221306173.png)
 
-## Frequently Asked Questions (FAQ)
+## Frequently Asked Questions (FAQ) : 
 
 ### 1. Is this website completely free?
 
