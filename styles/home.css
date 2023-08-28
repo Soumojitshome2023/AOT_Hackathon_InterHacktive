@@ -89,9 +89,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: fit-content;
   /* height: 3rem; */
   height: fit-content;
+  width: fit-content;
   background-size: 300% 300%;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
@@ -108,8 +108,8 @@ a {
     );
   background-origin: border-box;
   background-clip: content-box, border-box;
-  margin: 20px;
-  /* padding: 10px; */
+  margin: 15px;
+  padding: 10px;
 }
 
 #container-stars {
@@ -269,10 +269,10 @@ strong {
     font-size: 8vw;
   }
 
-  .btn {
+  /* .btn {
     width: 8.6rem;
     height: 2.6rem;
-  }
+  } */
 
   strong {
     font-size: 13px;
