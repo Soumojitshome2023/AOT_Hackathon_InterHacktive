@@ -53,10 +53,10 @@ body {
 }
 
 #topics {
-  /* border: 3px solid rgb(0, 97, 8); */
+  /* border: 3px solid rgb(255, 0, 0); */
   height: fit-content;
   margin-top: 100px;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,13 +67,15 @@ body {
 
 .card {
   /* border: 3px solid rgb(255, 0, 0); */
-  max-width: 400px;
+  max-width: 300px;
+  width: fit-content;
   border-radius: 0.5rem;
   background-color: #d4d4d4ec;
   box-shadow: 0 0px 8px 2px rgb(5, 5, 5);
   border: 1px solid transparent;
   margin: 20px;
   height: fit-content;
+  /* height: 300px; */
 }
 
 .card a {
