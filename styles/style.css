@@ -33,7 +33,7 @@ body {
   height: fit-content;
   text-align: center;
  
-  background-color: rgba(124, 124, 124, 0.842);
+  background-color: rgba(92, 92, 92, 0.87);
   /* background-image: linear-gradient(var(--dark-blue) 50%, white); */
   
   /* box-shadow: 0 0 10px 5px rgb(27, 27, 26); */
@@ -603,7 +603,7 @@ body {
   border-radius: 50px;
   border: 0;
   /* background-color: rgb(189, 189, 189); */
-  background-color: rgb(155, 155, 155);
+  background-color: rgb(161, 161, 161);
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -612,6 +612,7 @@ body {
   cursor: pointer;
   margin: 10px;
   font-weight: bold;
+  /* color: white; */
 }
 
 .learn_more_btn:hover {
